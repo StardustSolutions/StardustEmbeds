@@ -6,7 +6,7 @@ Example HTML for embedding Stardust reactions:
 ```
 <section>
   <div>
-    <iframe width="471" height="425" src="https://app.stardust.co/embed_v2?reaction_id=3f9abea4-8990-461c-87b5-6c421c976cfa" frameborder="0" allowfullscreen />
+    <iframe width="380" height="700" src="https://app.stardust.co/embed_v2?reaction_id=3f9abea4-8990-461c-87b5-6c421c976cfa" frameborder="0" allowfullscreen />
   </div>
   <!-- add additional embeds here -->
 </section>
