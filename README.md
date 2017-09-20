@@ -6,30 +6,23 @@ Example HTML for embedding Stardust reactions:
 ```
 <section>
   <div>
-    <iframe width="471" height="425" src="https://app.stardust.co/embed?playlist_id=3f9abea4-8990-461c-87b5-6c421c976cfa" frameborder="0" allowfullscreen />
+    <iframe width="471" height="425" src="https://app.stardust.co/embed_v2?reaction_id=3f9abea4-8990-461c-87b5-6c421c976cfa" frameborder="0" allowfullscreen />
   </div>
   <!-- add additional embeds here -->
 </section>
 ```
 
-The embedded page is responsive and has two different layouts. One for mobile (anything below 376px) and desktop (376px and above). Here is the SASS to get the proper aspect ratio for each layout:
+The embedded page is responsive, however, you will need to make sure the iframe it's contained in is responsive on your website. Here is the SASS to get the iframe to be responsive:
 
 ```
 section {
-  max-width: 706px;
+  max-width: 380px;
   div {
     position: relative;
     padding-bottom: 181.56%;
-    padding-top: 35px;
+    padding-top: 10px;
     height: 0;
     overflow: hidden;
-    @media (min-width: 376px) {
-      position: relative;
-      padding-bottom: 85%;
-      padding-top: 35px;
-      height: 0;
-      overflow: hidden;
-    }
     iframe {
       position: absolute;
       top: 0;
